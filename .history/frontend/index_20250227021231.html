@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GraphRAG Configuration</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <h1>GraphRAG Configuration</h1>
+    <form id="configForm">
+        <fieldset>
+            <legend>General Settings</legend>
+            <label for="chunkSize">Chunk Size:</label>
+            <input type="number" id="chunkSize" name="chunkSize" value="300"><br><br>
+
+            <label for="chunkOverlap">Chunk Overlap:</label>
+            <input type="number" id="chunkOverlap" name="chunkOverlap" value="100"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Document Processing</legend>
+            <label for="includeImages">Include Images:</label>
+            <input type="checkbox" id="includeImages" name="includeImages"><br><br>
+
+            <label for="inputDir">Input Directory:</label>
+            <input type="text" id="inputDir" name="inputDir"><br><br>
+
+            <label for="outputDir">Output Directory:</label>
+            <input type="text" id="outputDir" name="outputDir"><br><br>
+        </fieldset>
+
+        <fieldset>
+            <legend>Server Settings</legend>
+            <label for="proxyPort">LiteLLM Proxy Port:</label>
+            <input type="number" id="proxyPort" name="proxyPort" value="8000"><br><br>
+
+            <label for="chainlitPort">Chainlit Application Port:</label>
+            <input type="number" id="chainlitPort" name="chainlitPort" value="8501"><br><br>
+        </fieldset>
+
+        <button type="submit">Save Configuration</button>
+    </form>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

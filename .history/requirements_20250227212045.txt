@@ -1,0 +1,6 @@
+ollama
+tiktoken
+chainlit
+graphrag
+marker-pdf
+torch

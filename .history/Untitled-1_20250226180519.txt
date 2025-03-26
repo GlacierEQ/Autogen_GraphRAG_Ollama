@@ -1,0 +1,2 @@
+venv\Scripts\activate.bat
+litellm --model ollama_chat/llama3 --port 8000

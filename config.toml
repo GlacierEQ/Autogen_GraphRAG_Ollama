@@ -1,0 +1,68 @@
+[project]
+# Whether to enable telemetry (default: true). No personal data is collected.
+enable_telemetry = false
+
+# List of environment variables to be provided by each user to use the app.
+user_env = []
+
+# Duration (in seconds) during which the session is saved when the connection is lost
+session_timeout = 3600
+
+# Enable third parties caching (e.g LangChain cache)
+cache = false
+
+# Follow symlink for asset_path
+follow_symlink = false
+
+# Authorize HTTP methods (e.g. GET, POST, PUT, DELETE). Only POST is allowed by default.
+http_methods = ["POST", "GET"]
+
+[features]
+# Show the prompt playground
+prompt_playground = true
+
+# Process and display HTML in messages. This can be a security risk (see https://chainlit.io/security)
+unsafe_allow_html = false
+
+# Process and display images in messages.
+unsafe_allow_images = true
+
+# Enable the data persistence
+persist_data = true
+
+[UI]
+# Name of the app and chatbot.
+name = "GraphRAG + AutoGen"
+
+# Description of the app and chatbot. This is used for HTML tags.
+description = "Knowledge Graph-Enhanced RAG with AutoGen Agents"
+
+# The default value for the expand messages settings.
+default_expand_messages = true
+
+# Hide the chain of thought details from the user.
+hide_cot = false
+
+# Use a symmetric layout (the chat is centered).
+symmetric_layout = false
+
+# The favicon path. Can be a URL or a local path.
+favicon = "/static/favicon.png"
+
+# Custom theme
+[UI.theme]
+primary = "#3b82f6"  # Blue
+secondary = "#10b981"  # Green
+neutral = "#374151"   # Dark gray
+accent = "#f43f5e"    # Red
+
+# Light mode
+light_neutral = "#f5f7fa"  # Light gray background
+light_neutral_content = "#1f2937"  # Dark text on light background
+
+# Dark mode
+dark_neutral = "#111827"  # Dark gray background
+dark_neutral_content = "#f3f4f6"  # Light text on dark background
+
+[meta]
+generated_by = "GraphRAG + AutoGen Integration"

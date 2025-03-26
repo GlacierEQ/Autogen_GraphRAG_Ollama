@@ -1,0 +1,12 @@
+This is a sample Word document for testing.
+
+# Sample Heading
+
+This is a paragraph with some **bold text** and some *italic text*.
+
+| Header 1 | Header 2 |
+|----------|----------|
+| Row 1    | Data 1   |
+| Row 2    | Data 2   |
+
+![Sample Image](https://via.placeholder.com/150)

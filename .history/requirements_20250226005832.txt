@@ -1,0 +1,9 @@
+litellm[proxy]
+ollama
+pyautogen[retrievechat]
+tiktoken
+chainlit
+graphrag
+marker-pdf
+torch
+setup_all.bat

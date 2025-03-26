@@ -1,0 +1,42 @@
+# Document processor configuration
+
+# Log settings
+log_level: INFO
+log_file: "document_processing.log"
+
+# Processing options
+max_workers: 4  # Number of parallel workers for document processing
+
+# Output locations
+output_dir: "input/markdown"
+backup_dir: "input/originals"
+
+# Processor configurations
+processors:
+  word:
+    enabled: true
+    chunk_size: 300
+    chunk_overlap: 100
+  
+  pdf:
+    enabled: true
+    ocr_enabled: true
+    ocr_language: "eng"
+    chunk_size: 300
+    chunk_overlap: 100
+    extract_images: true
+    image_dpi: 300
+  
+  html:
+    enabled: false  # Not implemented yet
+    include_links: true
+    strip_scripts: true
+    chunk_size: 300
+    chunk_overlap: 100
+
+# File extension mappings
+file_extensions:
+  word: [".docx", ".doc"]
+  pdf: [".pdf"]
+  html: [".html", ".htm"]
+  markdown: [".md", ".markdown"]
